@@ -4,7 +4,7 @@ import $ from 'jquery';
 import shoppingList from './shopping-list';
 import api, { getItems, createItem, updateItem, deleteItem } from './api';
 import store from './store';
-// import './index.css';
+import './index.css';
 
 
 
