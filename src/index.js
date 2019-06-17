@@ -1,6 +1,16 @@
 'use strict';
 /* global shoppingList, store, api */
 
+import $ from 'jquery';
+
+function main() {
+  console.log('DOM is loaded');
+
+  const startMsg = $('<p>Webpack is working!</p>');
+  $('#root').append(startMsg);
+}
+
+$(main);
 $(document).ready(function() {
   shoppingList.bindEventListeners();
 
