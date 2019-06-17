@@ -1,16 +1,13 @@
 'use strict';
-/* global shoppingList, store, api */
 
 import $ from 'jquery';
+import shoppingList from './shopping-list';
+import api, { getItems, createItem, updateItem, deleteItem } from './api';
+import store from './store';
+// import './index.css';
 
-function main() {
-  console.log('DOM is loaded');
 
-  const startMsg = $('<p>Webpack is working!</p>');
-  $('#root').append(startMsg);
-}
 
-$(main);
 $(document).ready(function() {
   shoppingList.bindEventListeners();
 
@@ -23,3 +20,11 @@ $(document).ready(function() {
     .catch(err => console.log(err.message));
 });
 
+function main() {
+  console.log('DOM is loaded');
+
+  const startMsg = $('<p>Webpack is working!</p>');
+  $('#root').append(startMsg);
+}
+
+$(main);
