@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/thinkful-ei-emu/adrienne-eugene-npm-package-day/issues"
   },
-  "homepage": "https://github.com/thinkful-ei-emu/adrienne-eugene-npm-package-day#readme"
+  "homepage": "https://github.com/thinkful-ei-emu/adrienne-eugene-npm-package-day#readme",
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
 }
